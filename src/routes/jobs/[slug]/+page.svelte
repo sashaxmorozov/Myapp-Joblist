@@ -1,8 +1,19 @@
 <script>
     import SvelteMarkdown from 'svelte-markdown';
     import humanize from 'humanize-plus';
+    import { goto } from "$app/navigation";
     export let data;
+    import { getUserId } from '../../../utils/auth.js';
+    import { logIn } from '/Users/aleksandr/next-bootcamp/front-end/svelte-tailwind-app/myapp/src/stores/store.js';
+    let userId = getUserId();
+    function goToEdit(){
+        goto (`/jobs/${data.job.id}/edit`) 
+    };
 </script>
+
+{#if (data.job.user === userId) && $logIn } 
+<button class="btn btn-md" on:click={goToEdit}> Edit </button>
+{/if}
 
 <div class="mt-10">
     <div class="flex">

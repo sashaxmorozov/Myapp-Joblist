@@ -9,9 +9,7 @@ const emptyAuth = {
 
 export function logOut() {
   localStorage.setItem("auth", JSON.stringify(emptyAuth));
-  logIn.set = false;
-  console.log(logIn);
-  // location.reload()
+  logIn.set(false);
   goto('/');
   return true
 }

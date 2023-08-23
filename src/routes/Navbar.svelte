@@ -6,13 +6,22 @@ import { goto } from "$app/navigation";
 function goToLogin() {
     goto('/login');
 }
+function goToMain() {
+    goto('/');
+}
+function goToJobForm()
+{goto('/jobs/new')
+}
 </script>
 
 
 {#if $logIn} 
 <button class="btn btn-md" on:click={logOut}> Logout </button>
-<!-- {/if} -->
-<!-- {#if $logIn === false} -->
 {:else}
-<button class="btn btn-md" on:click={goToLogin}> Login/Signup </button>
+<button class="btn btn-md" on:click={goToLogin}> Login </button>
+{/if}
+
+<button class="btn btn-md" on:click={goToMain}> Main </button>
+{#if $logIn}
+<button class="btn btn-md" on:click={goToJobForm}> Post a job </button>
 {/if}
