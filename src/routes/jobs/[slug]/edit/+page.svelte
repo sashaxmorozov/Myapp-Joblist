@@ -2,7 +2,6 @@
     import { PUBLIC_BACKEND_BASE_URL } from '$env/static/public';
     import { goto } from "$app/navigation";
 	import { getTokenFromLocalStorage, getUserId } from '/Users/aleksandr/next-bootcamp/front-end/svelte-tailwind-app/myapp/src/utils/auth.js';
-	import { get } from 'svelte/store';
     export let data;
     let formErrors = {};
     
