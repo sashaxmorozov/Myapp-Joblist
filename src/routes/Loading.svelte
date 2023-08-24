@@ -13,7 +13,7 @@
         top: 0;
         left: 0;
         background: gray ;
-        inset: calc((50%));
+        inset: calc(50%);
         border-radius: var(--size);
         height: var(--size);
         width: var(--size);

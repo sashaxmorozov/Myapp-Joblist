@@ -7,7 +7,7 @@
     let formErrors = {};
     
 async function postCreateJob(){
-goto("/jobs");}
+goto("/");}
 
 async function createJob(evt) {
   evt.preventDefault()
@@ -68,11 +68,11 @@ let userid = getUserId();
                 class="input input-bordered w-full"
                 required
             />
-            <!-- {#if 'username' in formErrors}
-                <label class="label" for="username">
-                    <span class="label-text-alt text-red-500">{formErrors['username'].message}</span>
+            {#if 'title' in formErrors}
+                <label class="label" for="title">
+                    <span class="label-text-alt text-red-500">{formErrors['title'].message}</span>
                 </label>
-            {/if} -->
+            {/if}
         </div>
 
         <div class="form-control w-full">
@@ -86,11 +86,11 @@ let userid = getUserId();
                 class="input input-bordered w-full"
                 required
             />
-            <!-- {#if 'email' in formErrors}
-                <label class="label" for="email">
-                    <span class="label-text-alt text-red-500">{formErrors['email'].message}</span>
+            {#if 'employer' in formErrors}
+                <label class="label" for="employer">
+                    <span class="label-text-alt text-red-500">{formErrors['employer'].message}</span>
                 </label>
-            {/if} -->
+            {/if}
         </div>
 
         <div class="form-control w-full">
@@ -104,11 +104,11 @@ let userid = getUserId();
                 class="input input-bordered w-full"
                 required
             />
-            <!-- {#if 'email' in formErrors}
-                <label class="label" for="email">
-                    <span class="label-text-alt text-red-500">{formErrors['email'].message}</span>
+          {#if 'location' in formErrors}
+                <label class="label" for="location">
+                    <span class="label-text-alt text-red-500">{formErrors['location'].message}</span>
                 </label>
-            {/if} -->
+            {/if}
         </div>
 
         <div class="form-control w-full">
@@ -122,11 +122,11 @@ let userid = getUserId();
                 class="input input-bordered w-full"
                 required
             />
-            <!-- {#if 'password' in formErrors}
-                <label class="label" for="password">
-                    <span class="label-text-alt text-red-500">{formErrors['password'].message}</span>
+            {#if 'description' in formErrors}
+                <label class="label" for="description">
+                    <span class="label-text-alt text-red-500">{formErrors['description'].message}</span>
                 </label>
-            {/if} -->
+            {/if}
         </div>
 
         <div class="form-control w-full">
@@ -140,11 +140,11 @@ let userid = getUserId();
                 class="input input-bordered w-full"
                 required
             />
-            <!-- {#if 'password' in formErrors}
-                <label class="label" for="password">
-                    <span class="label-text-alt text-red-500">{formErrors['password'].message}</span>
+            {#if 'quirements' in formErrors}
+                <label class="label" for="requirements">
+                    <span class="label-text-alt text-red-500">{formErrors['requirements'].message}</span>
                 </label>
-            {/if} -->
+            {/if}
         </div>
 
         <div class="form-control w-full">
@@ -158,11 +158,11 @@ let userid = getUserId();
                 class="input input-bordered w-full"
                 required
             />
-            <!-- {#if 'password' in formErrors}
-                <label class="label" for="password">
-                    <span class="label-text-alt text-red-500">{formErrors['password'].message}</span>
+            {#if 'applicationInstructions' in formErrors}
+                <label class="label" for="applicationInstructions">
+                    <span class="label-text-alt text-red-500">{formErrors['applicationInstructions'].message}</span>
                 </label>
-            {/if} -->
+            {/if}
         </div>
 
         <div class="form-control w-full">
@@ -176,11 +176,11 @@ let userid = getUserId();
                 class="input input-bordered w-full"
                 required
             />
-            <!-- {#if 'email' in formErrors}
-                <label class="label" for="email">
-                    <span class="label-text-alt text-red-500">{formErrors['email'].message}</span>
+            {#if 'minAnnualCompensation' in formErrors}
+                <label class="label" for="minAnnualCompensation">
+                    <span class="label-text-alt text-red-500">{formErrors['minAnnualCompensation'].message}</span>
                 </label>
-            {/if} -->
+            {/if}
         </div>
         <div class="form-control w-full">
             <label class="label" for="maxAnnualCompensation">
@@ -193,11 +193,11 @@ let userid = getUserId();
                 class="input input-bordered w-full"
                 required
             />
-            <!-- {#if 'email' in formErrors}
-                <label class="label" for="email">
-                    <span class="label-text-alt text-red-500">{formErrors['email'].message}</span>
+            {#if 'maxAnnualCompensation' in formErrors}
+                <label class="label" for="maxAnnualCompensation">
+                    <span class="label-text-alt text-red-500">{formErrors['maxAnnualCompensation'].message}</span>
                 </label>
-            {/if} -->
+            {/if}
         </div>
 
         <div class="form-control w-full mt-4">
