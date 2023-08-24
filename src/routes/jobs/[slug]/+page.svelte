@@ -4,7 +4,7 @@
     import { goto } from "$app/navigation";
     export let data;
     import { getUserId } from '../../../utils/auth.js';
-    import { logIn } from '/Users/aleksandr/next-bootcamp/front-end/svelte-tailwind-app/myapp/src/stores/store.js';
+    import { logIn } from '../../../utils/auth.js';
     let userId = getUserId();
     function goToEdit(){
         goto (`/jobs/${data.job.id}/edit`) 

@@ -1,5 +1,5 @@
 <script>
-import { logIn } from "../stores/store.js";
+import { logIn } from "../../../utils/auth.js";
 import { logOut } from "../utils/auth.js";
 import { goto } from "$app/navigation";
 

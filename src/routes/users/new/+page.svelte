@@ -1,6 +1,6 @@
 <script>
   import { PUBLIC_BACKEND_BASE_URL } from '$env/static/public';
-  import { logIn } from "/Users/aleksandr/next-bootcamp/front-end/svelte-tailwind-app/myapp/src/stores/store.js";
+  import { logIn } from "../../../utils/auth.js";
   import { goto } from "$app/navigation";
 
   let formErrors = {};

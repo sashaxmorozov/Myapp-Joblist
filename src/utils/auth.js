@@ -1,5 +1,4 @@
 import { PUBLIC_BACKEND_BASE_URL } from '$env/static/public';
-import { logIn } from '../stores/store.js';
 import { goto } from "$app/navigation";
 import { writable } from 'svelte/store';
 export const logIn = writable(false);
